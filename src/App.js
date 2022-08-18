@@ -15,12 +15,12 @@ import Button from './components/Button';
 import SearchJson from './components/SearchJson';
 import Menu from './components/Menu';
 import ResponsiveLayout from './components/ResponsiveLayout';
-import PostsApp from './components/infinitescroll/PostsApp';
+import PostsAPI from './components/infinitescroll/PostsAPI';
 
 function App() {
 
   return (
-    <PostsApp></PostsApp>
+    <PostsAPI></PostsAPI>
   );
 }
 
