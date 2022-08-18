@@ -10,11 +10,17 @@ import ImageSlideShow from './components/ImageSlideShow';
 import Avatar from './components/Avatar';
 import FlashCard from './components/Flashcard';
 import PhotoList from './components/PhotoList';
-
+import Tabs from './components/Tabs';
+import Button from './components/Button';
+import SearchJson from './components/SearchJson';
+import Menu from './components/Menu';
+import ResponsiveLayout from './components/ResponsiveLayout';
+import PostsApp from './components/infinitescroll/PostsApp';
 
 function App() {
+
   return (
-    <Pagination></Pagination>
+    <PostsApp></PostsApp>
   );
 }
 

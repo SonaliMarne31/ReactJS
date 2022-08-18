@@ -4,6 +4,7 @@ import { useState } from "react";
 export default function Game(props) {
 
     const n = 3;
+    const m = 3;
     const [status, setStatus] = useState('Yet to Start');
     const [clickCount, setClickCount] = useState(0);
     const [xIndex, setXIndex] = useState([]);

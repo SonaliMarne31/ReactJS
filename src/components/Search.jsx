@@ -2,7 +2,6 @@ import React, { useState } from "react";
 
 export default function Search() {
 
-
     const array = [
         'HTML',
         'CSS',

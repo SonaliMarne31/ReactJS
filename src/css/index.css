@@ -7,6 +7,11 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+button {
+  height: 30px;
+  width: 100px;
+}
+
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
@@ -299,3 +304,64 @@ input {
 }
 
 /** Photo web app **/
+
+/** Tabs CSS Start **/
+.tab-list {
+  display: inline-flex;
+}
+
+.tab-btn {
+  width: 50px;
+}
+
+/** Tabs CSS End **/
+
+/** Menu CSS Start **/
+.menu-container {
+  background-color: #ddd;
+}
+
+.menu-container:focus {
+  border: blue;
+}
+
+/** Menu CSS End **/
+
+/** Responsive Container CSS Start **/
+
+.responsive-flex {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+}
+
+.div-container {
+  background-color: pink;
+  width: 50%;
+  height: 30px;
+  margin: 5px;
+}
+
+/* Responsive layout - makes a one column-layout instead of two-column layout */
+@media (max-width: 800px) {
+  .responsive-flex {
+    flex-direction: column;
+  }
+}
+
+/** Infinite Scroll Start **/
+.post-container {
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    background-color: lightblue;
+    border-radius: 15px;
+    padding: 10px;
+    margin: 10px;
+    height: 50px;
+}
+
+.post-container h3, .post-container p {
+  background-color: transparent;
+  margin: 3px;
+}
+/** Infinite Scroll End **/
