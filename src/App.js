@@ -16,11 +16,13 @@ import SearchJson from './components/SearchJson';
 import Menu from './components/Menu';
 import ResponsiveLayout from './components/ResponsiveLayout';
 import PostsAPI from './components/infinitescroll/PostsAPI';
+import APICall from './components/APICall';
+import AllComponents from './components/AllComponents';
 
 function App() {
 
   return (
-    <PostsAPI></PostsAPI>
+    <AllComponents></AllComponents>
   );
 }
 

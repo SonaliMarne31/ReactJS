@@ -30,33 +30,33 @@ export default function ToDoList(props) {
             // response = await response.json()
             // console.log(response);
 
-            return new Promise((resolve, reject) => {
-                const req = https.get('https://jsonmock.hackerrank.com/api/movies?Year=2015', (res) => {
+            // return new Promise((resolve, reject) => {
+            //     const req = https.get('https://jsonmock.hackerrank.com/api/movies?Year=2015', (res) => {
                     
-                    res.on('data', (chunk) => {
+            //         res.on('data', (chunk) => {
                 
-                        body += chunk;
-                    });
+            //             body += chunk;
+            //         });
         
-                    res.on('end', () => {
-                            let i=0;
-                            let jsonData = JSON.parse(body);
-                            let movies = jsonData.data;
-                            let titles = movies.map((m) => m.Title);
-                            let titleStr = ''; //titles.length > 0 ? '' : "No Results Found";
-                            for(i=0; i<titles.length; i++) {
-                                titleStr += titles[i];
-                                if(i!=titles.length-1) {
-                                    titleStr += '\n';
-                                }
-                            }
-                            console.log(titleStr);
-                            resolve(titleStr);
-                    });
+            //         res.on('end', () => {
+            //                 let i=0;
+            //                 let jsonData = JSON.parse(body);
+            //                 let movies = jsonData.data;
+            //                 let titles = movies.map((m) => m.Title);
+            //                 let titleStr = ''; //titles.length > 0 ? '' : "No Results Found";
+            //                 for(i=0; i<titles.length; i++) {
+            //                     titleStr += titles[i];
+            //                     if(i!=titles.length-1) {
+            //                         titleStr += '\n';
+            //                     }
+            //                 }
+            //                 console.log(titleStr);
+            //                 resolve(titleStr);
+            //         });
 
-                });
+            //     });
 
-            });
+            // });
         }
     
         fetchMyAPI();
